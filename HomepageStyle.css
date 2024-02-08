@@ -1,0 +1,256 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    /*   font-family: 'Roboto Condensed', sans-serif; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+    margin: 0;
+    background-image: url(https://cdn.glitch.global/37186ca3-711b-46f7-80d2-baa46b6d4492/background.png?v=1687845951777);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+    /*   overflow: hidden; */
+    /*   font-family: sans-serif; */
+    line-height: 2;
+    /*   background-color: #0f0f0f; */
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+@media only screen and (min-device-width: 1px) {
+    body {
+        background-image: url(https://cdn.glitch.global/37186ca3-711b-46f7-80d2-baa46b6d4492/background.png?v=1687845951777);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    body {
+        font-size: 10rem;
+    }
+}
+
+/*------------------------------------------Scroll-Bar-CSS------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/* images and videos max out at full width */
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.nav {
+    /*   border: 1px solid white; */
+    /*   background-color: #0f0f0f; */
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #0f0f0f;
+    border-bottom: 3px solid white;
+}
+
+.item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0.25vw;
+    text-align: center;
+    width: 10vw;
+    font-size: 1vw;
+    /*   border: 1px solid white; */
+    /*   background-color: black; */
+    border-radius: 3px;
+    box-shadow: 1px 1px transparent;
+}
+
+.home {
+    width: 6vw;
+}
+
+.about {
+    /*   text-decoration: underline; */
+    background-color: #f930b050;
+    margin-right: 0vw;
+}
+
+.projects {
+    color: white;
+}
+
+.icon {
+    width: 5%;
+    height: 5%;
+    /*   position: absolute; */
+}
+
+.navButton:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navButton:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.navButton:hover {
+    color: #fd8818;
+    text-decoration: none;
+}
+
+.navButton:active {
+    color: #fd8818;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.sticky+.outerbody {
+    padding-top: 30%;
+}
+
+/* hr {
+    margin: 0px;
+    border: 2px solid white;
+  } */
+
+/*----------------------------------------------------------------------------------------------------*/
+.body-title {
+    color: #fd8818;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 5vw;
+}
+
+.outer-body {
+    margin: auto;
+    margin-top: 10%;
+    width: 55%;
+    background-color: #0f0f0f99;
+    border-radius: 2%;
+    border: 3px solid white
+}
+
+.body-container {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.selfie {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.body-item {
+    padding: 10%;
+    font-size: 1vw
+}
+
+.body-text {
+    color: white;
+    text-align: justify;
+    padding: 10% 10% 10% 0;
+    font-size: 0.75vw;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    height: 3vh;
+    margin-bottom: -2px;
+}
+
+.contacts {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 90%;
+}
+
+.contact-link:link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #fd8818;
+    text-decoration: none;
+}
+
+.contact-link:active {
+    color: #fd8818;
+    text-decoration: none;
+}
+
+.intro {
+    color: #fd8818;
+    font-size: 1.15vw;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
